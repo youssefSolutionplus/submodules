@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/btnStartRecording"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/animated_record_indicator"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Start Recording" />
+
+    <ImageButton
+        android:id="@+id/btnStopRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStartRecording"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_stop"
+        android:background="?android:attr/selectableItemBackground"
+        android:visibility="gone"
+        android:contentDescription="@string/stop_recording" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStopRecording"
+        android:layout_marginTop="16dp"
+        android:text="Result:"
+        android:textSize="18sp" />
+
+</RelativeLayout>
