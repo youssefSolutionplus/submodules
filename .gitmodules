@@ -1,0 +1,3 @@
+[submodule "Android-Kotlin-MVVM-Template"]
+	path = Android-Kotlin-MVVM-Template
+	url = https://github.com/MohamedHarmoush/Android-Kotlin-MVVM-Template.git
